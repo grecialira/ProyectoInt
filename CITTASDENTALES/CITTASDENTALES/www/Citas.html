@@ -1,0 +1,72 @@
+﻿
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Alumnos</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.validate.js"></script>
+    <script src="scripts/bootbox.min.js"></script>
+    <script src="scripts/jquery.dataTables.min.js"></script>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+    <style>
+        .table {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h4>Alumnos <small>Registro</small></h4>
+        </div>
+
+        <!-- Menu de Taps -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#registro" aria-controls="registro" role="tab" data-toggle="tab">Registrar</a>
+            </li>
+            <li role="presentation">
+                <a href="#listado" aria-controls="listado" role="tab" data-toggle="tab">Listado</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="registro">
+                
+            </div>
+            <div role="tabpanel" class="tab-pane" id="listado">
+                <!-- Contenido de la tabla de alumnos -->
+                <table class="table table-bordered" id="ListadoAlumnos">
+                    <thead>
+                        <tr>
+                            <th class="text-center"><span class="glyphicon glyphicon-cog"></span></th>
+                            <th>Codigo</th>
+                            <th>Nombre</th>
+                            <th>Fecha Nac.</th>
+                            <th>Edad</th>
+                            <th>Domicilio</th>
+                            <th>Teléfono</th>
+                        </tr>
+                    </thead>
+                    <tbody id="TablaAlumnos"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/Citas.js"></script>
+</body>
+</html>

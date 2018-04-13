@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="css/Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Menu de Taps -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+            <a href="#registro" aria-controls="registro" role="tab" data-toggle="tab">Registrar</a>
+        </li>
+        <li role="presentation">
+            <a href="#listado" aria-controls="listado" role="tab" data-toggle="tab">Listado</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="registro">
+            <form id="form1">
+                <input id="Id" value="0" type="hidden" />
+                <div class="panel">
+                    <div class="panel-body">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Nombre completo" />
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control" id="Fecha" name="Fecha" />
+                        </div>
+                        <div class="form-group">
+                            <input type="time" class="form-control" id="Hora" name="Hora" />
+                        </div>
+
+                    </div>
+                    <div class="panel-footer text-center" style="padding-bottom:10px">
+                        <button type="submit" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-floppy-save"></span> Guardar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="listado">
+            <!-- Contenido de la tabla de alumnos -->
+            <table class="table table-bordered" id="ListadoAlumnos">
+                <thead>
+                    <tr>
+                        <th class="text-center"><span class="glyphicon glyphicon-cog"></span></th>
+
+                        <th>Nombre</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+
+                    </tr>
+                </thead>
+                <tbody id="TablaCita"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="scripts/Citas.js"></script>
+
+
+</body>
+</html>
